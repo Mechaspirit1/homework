@@ -1,3 +1,5 @@
+#! usr/bin/env python3
+
 banner = r"""
     _/_/_/    _/_/_/  _/_/_/_/_/    _/_/    _/      _/   
    _/    _/    _/        _/      _/    _/  _/_/    _/    
@@ -42,3 +44,4 @@ while True:
     except EOFError:
         print("\nProcesso interrompido, desligando...")
         break
+

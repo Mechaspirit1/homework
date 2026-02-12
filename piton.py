@@ -1,13 +1,12 @@
 banner = r"""
-d8888b. d888888b d888888b  .d88b.  d8b   db 
-88  `8D   `88'   `~~88~~' .8P  Y8. 888o  88 
-88oodD'    88       88    88    88 88V8o 88 
-88~~~      88       88    88    88 88 V8o88 
-88        .88.      88    `8b  d8' 88  V888 
-88      Y888888P    YP     `Y88P'  VP   V8P 
+    _/_/_/    _/_/_/  _/_/_/_/_/    _/_/    _/      _/   
+   _/    _/    _/        _/      _/    _/  _/_/    _/    
+  _/_/_/      _/        _/      _/    _/  _/  _/  _/     
+ _/          _/        _/      _/    _/  _/    _/_/      
+_/        _/_/_/      _/        _/_/    _/      _/       
+                                                      
 """
 print(banner)
-print("Programa feito por APENAS Pablo Henrique Ferreira Loschi ©")
 name = input("Nome do aluno -> ")
 
 while True:
@@ -19,7 +18,7 @@ while True:
         
         final_grade = ((test_grade + ass_grade) / 2) + ((test_grade2 + ass_grade2) / 2)
 
-        print(f"Sua nota final é", {final_grade})
+        print(f"Sua nota final é {round(final_grade, 2)}")
         if final_grade >= 7:
             print("Você foi aprovado !")
         elif final_grade >= 5 and final_grade <= 6.9:
@@ -31,6 +30,7 @@ while True:
         if retry == 'y':
             continue
         else:
+            print("Obrigado por usar")
             break
     
     except ValueError:
@@ -42,4 +42,3 @@ while True:
     except EOFError:
         print("\nProcesso interrompido, desligando...")
         break
-    
